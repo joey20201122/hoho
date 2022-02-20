@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <title>抽奖咯</title>
+    </head>
+<body>
+<script language="javascript">
+	var x=0;
+	var word='初始化中'
+function chouj()
+	{	
+		x=Math.floor(Math.random() * 101);
+		if(x<30)
+			{
+			    word='奖励8';
+			}
+		else if(x<55)
+			{
+				word='奖励7';
+			}
+		else if(x<70)
+			{
+				word='奖励6';
+			}
+		else if(x<80)
+			{
+				word='奖励5';
+			}
+		else if(x<88)
+			{
+				word='奖励4';
+			}
+		else if(x<94)
+			{
+				word='奖励3';
+			}
+		else if(x<98)
+			{
+				word='奖励2';
+			}
+		else if(x<101)
+			{
+				word='奖励1';
+			}	
+		document.getElementById("ddd").value=word;
+	}	
+</script>
+        <input type="button" id="but" size="20" onclick="chouj()"  value="点击抽奖"/></br>
+	    <input type="text" id="ddd"/>
+</body>
+</html>
